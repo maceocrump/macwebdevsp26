@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Van’s Cookies</title>
+    <style>
+      :root {
+        --primary-brown: #5d4037;
+        --accent-gold: #c6a664;
+        --bg-cream: #fdfaf5;
+        --toffee-orange: #d4a373;
+      }
+
+      body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: var(--bg-cream);
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        color: var(--primary-brown);
+        text-align: center;
+        border-bottom: 2px solid var(--accent-gold);
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+      }
+
+      .subtitle {
+        text-align: center;
+        font-style: italic;
+        color: #777;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: var(--primary-brown);
+        border-left: 5px solid var(--accent-gold);
+        padding-left: 15px;
+        margin-top: 40px;
+        background: rgba(198, 166, 100, 0.1);
+      }
+
+      h3 {
+        color: #7d5a50;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        margin-top: 25px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .recipe-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .ingredient-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+
+      .instruction-step {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        border-left: 3px solid var(--toffee-orange);
+      }
+
+      .optional {
+        color: #8b4513;
+        font-weight: bold;
+      }
+
+      .refrigeration-methods {
+        list-style: none;
+        padding: 0;
+      }
+
+      .method {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+      }
+
+      .best { border: 2px solid #4caf50; background: #e8f5e9; }
+      .good { border: 2px solid #ff9800; background: #fff3e0; }
+      .standard { border: 2px solid #9e9e9e; background: #f5f5f5; }
+
+      @media (max-width: 600px) {
+        .recipe-container { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Van’s Signature Cookies</h1>
+    <p class="subtitle">A masterclass in texture: Brown butter, handmade toffee, and dark chocolate.</p>
+
+    <img src="cookies.jpeg" alt="Brown butter toffee cookies" style="width:100%; border-radius:8px; margin-bottom:20px;">
+
+    <h2>Choose Your Ingredients</h2>
+    <div class="recipe-container">
+      <div class="ingredient-card">
+        <h3>Version A: With Toffee</h3>
+        <strong>Toffee:</strong>
+        <ul>
+          <li>1 stick unsalted butter</li>
+          <li>1 cup light brown sugar</li>
+          <li>1 tsp kosher salt</li>
+        </ul>
+        <strong>Brown Butter:</strong>
+        <ul>
+          <li>2 sticks high-quality butter</li>
+          <li>2+ ice cubes</li>
+        </ul>
+        <strong>Dough & Mix-ins:</strong>
+        <ul>
+          <li>1/2 cup white sugar</li>
+          <li>1 1/2 cups dark brown sugar</li>
+          <li>2 tsp kosher salt</li>
+          <li>1/2 tsp baking soda</li>
+          <li>2 eggs + 2 tsp quality vanilla</li>
+          <li>2 1/2 cups flour</li>
+          <li>1-1.25 cups chopped dark chocolate (65-70%)</li>
+          <li class="optional">Optional: 2 tsp espresso powder</li>
+          <li class="optional">Optional: Flaky salt for topping</li>
+        </ul>
+      </div>
+
+      <div class="ingredient-card">
+        <h3>Version B: Pure Chocolate</h3>
+        <strong>Brown Butter:</strong>
+        <ul>
+          <li>2 sticks high-quality butter</li>
+          <li>2+ ice cubes</li>
+        </ul>
+        <strong>Dough & Mix-ins:</strong>
+        <ul>
+          <li>1/2 cup white sugar</li>
+          <li>1 1/2 cups dark brown sugar</li>
+          <li>2 tsp kosher salt</li>
+          <li>1/2 tsp baking soda</li>
+          <li>2 eggs + 2 tsp quality vanilla</li>
+          <li>2 1/2 cups flour</li>
+          <li>2 cups chopped dark chocolate (65-70%)</li>
+          <li class="optional">Optional: 2 tsp espresso powder</li>
+          <li class="optional">Optional: Flaky salt for topping</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Preparation</h2>
+    
+    <div class="instruction-step">
+      <h3>Step 1: The Toffee (Make Ahead)</h3>
+      <p>Combine light brown sugar, salt, and butter in a skillet over medium-low heat. Stir until melted and caramel-like. Bring to a slow, steady bubble (300°F or dark golden brown). Pour onto parchment and freeze for 30 minutes until brittle.</p>
+    </div>
+
+    <div class="instruction-step">
+      <h3>Step 2: The Chocolate</h3>
+      <p>Chop bars into uneven chunks. Save every bit of "chocolate dust" to add to the dough later.</p>
+    </div>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li><strong>Cream the Sugars:</strong> Combine dark brown sugar, white sugar, salt, baking soda, and (optional) espresso powder. Mix until it feels like kinetic sand.</li>
+      <li><strong>Brown the Butter:</strong> Cook butter over medium-low heat until golden amber with dark specks and a nutty smell. Transfer to a bowl and add ice cubes one at a time until the temperature hits 100°F.</li>
+      <li><strong>Emulsify:</strong> Mix butter into sugar until fully incorporated. Add eggs and vanilla, whisking vigorously until it looks like a wet cake batter.</li>
+      <li><strong>Combine:</strong> Fold in flour until no white streaks remain. Stir in chocolate chunks (and smashed toffee pieces if using).</li>
+    </ol>
+
+    <h2>The 48-Hour Chill</h2>
+    <div class="refrigeration-methods">
+      <div class="method best"><strong>BEST:</strong> Scoop into craggly, imperfect balls. Individually wrap in plastic. Refrigerate for 48 hours.</div>
+      <div class="method good"><strong>GOOD:</strong> Scoop onto a parchment-lined sheet. Wrap the entire sheet tightly with plastic. Refrigerate for 48 hours.</div>
+      <div class="method standard"><strong>STANDARD:</strong> Cover the mixing bowl tightly with plastic. Refrigerate for 48 hours.</div>
+    </div>
+
+    <h2>Baking</h2>
+    <ol>
+      <li>Preheat oven to 350°F.</li>
+      <li>Place dough on parchment-lined sheets.</li>
+      <li>Bake for 15–20 minutes. If centers look slightly soft/raw at 15 mins, they are likely perfect.</li>
+      <li>Cool on the sheet for 2–3 minutes, then move to a wire rack for 5–10 minutes.</li>
+      <li class="optional">Top with flaky salt while warm.</li>
+    </ol>
+  </body>
+</html>
